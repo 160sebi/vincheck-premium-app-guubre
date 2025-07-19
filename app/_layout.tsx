@@ -57,9 +57,15 @@ export default function RootLayout() {
         <Stack
           screenOptions={{
             headerShown: false,
-            animation: 'default',
+            animation: 'slide_from_right',
+            animationDuration: 300,
           }}
-        />
+        >
+          <Stack.Screen name="index" />
+          <Stack.Screen name="scanner" />
+          <Stack.Screen name="results" />
+          <Stack.Screen name="history" />
+        </Stack>
       </SafeAreaView>
     </SafeAreaProvider>
   );
